@@ -34,7 +34,11 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    publicPath: "public/"
-  },
+  builds: [
+    {
+      src: "nuxt.config.js",
+      use: "@nuxtjs/vercel-builder",
+      config: {},
+    },
+  ],
 };
