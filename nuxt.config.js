@@ -1,5 +1,5 @@
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
+  // Global page headers
   head: {
     title: "Local-Chat",
     htmlAttrs: {
@@ -13,32 +13,23 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
+  target: "static", // Ensure static target is specified
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
+  // Global CSS
   css: [],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  // Plugins to run before rendering page
   plugins: [],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
+  // Auto import components
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    "@nuxt/typescript-build",
-    "@nuxtjs/tailwindcss",
-  ],
+  // Modules for dev and build
+  buildModules: ["@nuxt/typescript-build", "@nuxtjs/tailwindcss"],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
+  // Modules
   modules: [],
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  builds: [
-    {
-      src: "nuxt.config.js",
-      use: "@nuxtjs/vercel-builder",
-      config: {},
-    },
-  ],
+  // Build Configuration
+  build: {},
 };
